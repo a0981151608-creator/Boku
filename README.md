@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邱惠君 | 個人介紹</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy-dark: #0D1B2A;
+            --navy-main: #1B263B;
+            --navy-soft: #415A77;
+            --blue-soft: #778DA9;
+            --text-main: #E0E1DD;
+            --card-bg: rgba(27,38,59,0.9);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy-main));
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 45px;
+            border-radius: 22px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== Header ===== */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.6);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            color: var(--blue-soft);
+        }
+
+        /* ===== Info Section ===== */
+        .info-item {
+            background: rgba(119,141,169,0.08);
+            border-radius: 16px;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+            transition: var(--transition);
+        }
+
+        .info-item:hover {
+            background: rgba(119,141,169,0.18);
+            transform: translateX(6px);
+        }
+
+        .label {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: var(--blue-soft);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .value {
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: #A2D2FF;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom-color: #A2D2FF;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background: var(--navy-soft);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* ===== Image Gallery ===== */
+        .gallery {
+            margin-top: 40px;
+        }
+
+        .gallery h2 {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+            color: var(--blue-soft);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+            transition: var(--transition);
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            margin-top: 45px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--blue-soft);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 520px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+
+    <header>
+        <img src="9-24_da52fcc8de41dd63bf1f282297da9453.jpg" alt="頭像" class="avatar">
+        <div>
+            <h1>邱惠君</h1>
+            <p class="tagline">PERSONAL PROFILE</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="info-item">
+            <span class="label">電子郵件 / Contact</span>
+            <span class="value">
+                <a href="mailto:a0981151608@gmail.com">a0981151608@gmail.com</a>
+            </span>
+        </div>
+
+        <div class="info-item">
+            <span class="label">學歷背景 / Education</span>
+            <span class="value">國立嘉義大學｜碩士班在讀</span>
+        </div>
+
+        <div class="info-item">
+            <span class="label">研究現狀 / Research</span>
+            <p class="value">畢業論文籌備中，專注於實驗設計與學術成果累積。</p>
+        </div>
+
+        <div class="info-item">
+            <span class="label">自我提升 / Self-Learning</span>
+            <p class="value">持續在研究之外拓展個人能力：</p>
+            <div class="badge-container">
+                <span class="badge">精進畫畫</span>
+                <span class="badge">日文學習</span>
+                <span class="badge">自我進化中</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Research Record</h2>
+        <div class="gallery-grid">
+            <img src="20251211_152948.jpg" alt="實驗照片一">
+            <img src="20251211_153033.jpg" alt="實驗照片二">
+        </div>
+    </section>
+
+    <footer>
+        設計與開發 © <span id="year"></span> 邱惠君
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
 # Boku
