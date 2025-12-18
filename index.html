@@ -59,12 +59,13 @@
         }
 
         .avatar {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             border: 3px solid rgba(255,255,255,0.6);
             object-fit: cover;
             flex-shrink: 0;
+            background-color: var(--navy-soft);
         }
 
         h1 {
@@ -110,6 +111,7 @@
             color: #A2D2FF;
             text-decoration: none;
             border-bottom: 1px solid transparent;
+            transition: var(--transition);
         }
 
         a:hover {
@@ -149,10 +151,12 @@
 
         .gallery-grid img {
             width: 100%;
+            aspect-ratio: 4/3;
             border-radius: 16px;
             object-fit: cover;
             box-shadow: 0 10px 25px rgba(0,0,0,0.35);
             transition: var(--transition);
+            background-color: var(--navy-soft);
         }
 
         .gallery-grid img:hover {
@@ -183,7 +187,8 @@
 <main class="container">
 
     <header>
-        <img src="9-24_da52fcc8de41dd63bf1f282297da9453.jpg" alt="頭像" class="avatar">
+        <!-- 使用指定的 GitHub 原始圖片連結作為頭像 -->
+        <img src="https://github.com/a0981151608-creator/Boku/blob/main/assets/images/9-24_da52fcc8de41dd63bf1f282297da9453.jpg?raw=true" alt="頭像" class="avatar">
         <div>
             <h1>邱惠君</h1>
             <p class="tagline">PERSONAL PROFILE</p>
@@ -222,8 +227,9 @@
     <section class="gallery">
         <h2>Research Record</h2>
         <div class="gallery-grid">
-            <img src="20251211_152948.jpg" alt="實驗照片一">
-            <img src="20251211_153033.jpg" alt="實驗照片二">
+            <!-- 使用指定的 GitHub 原始圖片連結作為研究紀錄照片 -->
+            <img src="https://github.com/a0981151608-creator/Boku/blob/main/assets/images/20251211_152948.jpg?raw=true" alt="研究紀錄照片一">
+            <img src="https://github.com/a0981151608-creator/Boku/blob/main/assets/images/20251211_153033.jpg?raw=true" alt="研究紀錄照片二">
         </div>
     </section>
 
